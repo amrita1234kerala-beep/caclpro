@@ -9,9 +9,12 @@ export default defineConfig(({ mode }) => {
     define: {
       "import.meta.env.VITE_API_URL": JSON.stringify(env.VITE_API_URL),
     },
-    // Add this preview section to allow the public Railway host
-    preview: {
+    server: {
       allowedHosts: "all",
+    },
+    preview: {
+      host: "0.0.0.0",
+      port: 5173,
     },
   };
 });
