@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const API_URL = import.meta.env.VITE_API_URL || "https://railway.app";
 
 const buttons = [
   ["sin", "function"], ["cos", "function"], ["tan", "function"], ["√", "function"], ["^", "operator"],
