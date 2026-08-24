@@ -63,7 +63,7 @@ UNARY_OPS = {
 }
 
 def safe_eval(expression: str) -> float:
-    expression = expression.replace("×", "*").replace("÷", "/").replace("^", "**")
+    expression = expression.replace("×", "*").replace("÷", "/").replace("^", "**").replace("−", "-")
     expression = re.sub(r"(?<=\d)%", "/100", expression)
     expression = expression.strip()
 
